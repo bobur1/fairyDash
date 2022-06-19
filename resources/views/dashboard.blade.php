@@ -49,7 +49,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <a href="#" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Crypto Fairy</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="#" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 </div>
             </nav>
         </div>
@@ -129,18 +129,18 @@
                             <div class="mb-3">
                                 <label for="accountsFrom[]" class="col-sm-2 col-form-label">Top twitters</label>
                                 <select class="form-select form-select-lg" name="accountsFrom[]" multiple id="accountsFrom">
-                                    <option value="C++">C++</option>
-                                    <option value="C#">C#</option>
-                                    <option value="Java">Java</option>
-                                    <option value="Objective-C">Objective-C</option>
-                                    <option value="JavaScript">JavaScript</option>
-                                    <option value="Perl">Perl</option>
-                                    <option value="PHP">PHP</option>
-                                    <option value="Ruby on Rails">Ruby on Rails</option>
-                                    <option value="Android">Android</option>
-                                    <option value="iOS">iOS</option>
-                                    <option value="HTML">HTML</option>
-                                    <option value="XML">XML</option>
+                                    <option value="elonmusk">Elon Musk</option>
+                                    <option value="BarackObama">Barack Obama</option>
+                                    <option value="justinbieber">Justin Bieber	</option>
+                                    <option value="WarrenBuffett">Warren Buffett</option>
+                                    <option value="BillGates">Bill Gates</option>
+                                    <option value="MikeBloomberg">Mike Bloomberg</option>
+                                    <option value="MichaelDell">Michael Dell</option>
+                                    <option value="realDonaldTrump">Donald Trump</option>
+                                    <option value="Oprah">Oprah Winfrey</option>
+                                    <option value="richardbranson">Richard Branson</option>
+                                    <option value="GuyKawasaki">Guy Kawasaki</option>
+                                    <option value="ThisIsSethsBlog">Seth Godin</option>
                                 </select>
                             </div>
                             <button type="submit" id="btn" class="btn btn-primary">Search</button>
@@ -297,7 +297,6 @@
                             var prices = [];
                             
                             for (const [key, value] of Object.entries( data[0]['data'])) {
-                                console.log(`${value.Close}`);
                                 labels.push(timeConverter(value.OpenTime));
                                 prices.push(value.Open);
                             }

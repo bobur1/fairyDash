@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #009CFF;
-    --light: #F3F6F9;
+    --primary: #0A2E36;
+    --light: #D9EDDE;
     --dark: #191C24;
 }
 
@@ -293,12 +293,12 @@
 }
 
 .tag {
-    background: none repeat scroll 0 0 gold;
-    color: green;
+    background: none repeat scroll 0 0 #0A2E36;
+    color: #EE4D23;
 }
 
 .tag span {
-    background: none repeat scroll 0 0 goldenrod;
+    background: none repeat scroll 0 0 #FED00D;
 }
 
 .tag .tag-i:hover{
@@ -306,7 +306,7 @@
 }
 
 .text-primary {
-    color: green !important;
+    color: #0A2E36 !important;
 }
 
 .row .warning {
@@ -315,4 +315,26 @@
 
 .row .success {
     color: green;
+}
+
+.bg-light {
+    background-color: #D9EDDE !important;
+}
+
+a {
+    color: #0A2E36 ;
+}
+
+.btn-primary {
+    background-color: #EE4D23;
+    border-color: #EE4D23;
+}
+
+.btn-primary:hover {
+    background-color: #FED00D;
+    border-color: #FED00D;
+}
+
+.btn.btn-primary {
+    color: #0A2E36;
 }
