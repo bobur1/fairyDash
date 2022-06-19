@@ -15,5 +15,5 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [DashboardController::class, 'index'])->name('home');
 Route::get('/dash', [DashboardController::class, 'index'])->name('dashboard');
