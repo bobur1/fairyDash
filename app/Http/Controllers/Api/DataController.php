@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Models\RawData;
+use Illuminate\Support\Facades\Http;
 
 class DataController extends Controller
 {
@@ -25,5 +26,19 @@ class DataController extends Controller
     public function update(Request $request)
     {
         RawData::updateOrCreate(['id'=>1], ['data'=>$request->all()]);
+    }
+
+    public function sendTwitter(Request $request)
+    {
+        $arr = [
+            'accountsFrom' => [],
+            'keywords' => [],
+            'hashtags' => [],
+            'cashtags' => []
+        ];
+        $arr = array_merge($arr,$request->all());
+
+        $response = Http::post('http://18.196.221.150:5500/twitter', $arr);
+        return $response;
     }
 }

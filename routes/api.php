@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('data',  [DataController::class, 'index'])->name('data');
 Route::post('update',  [DataController::class, 'update'])->name('update');
+Route::get('resend',  [DataController::class, 'sendTwitter'])->name('resend');

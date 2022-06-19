@@ -130,6 +130,7 @@
                                 <label for="accountsFrom[]" class="col-sm-2 col-form-label">Top twitters</label>
                                 <select class="form-select form-select-lg" name="accountsFrom[]" multiple id="accountsFrom">
                                     <option value="elonmusk">Elon Musk</option>
+                                    <option value="cz_binance">Binance</option>
                                     <option value="BarackObama">Barack Obama</option>
                                     <option value="justinbieber">Justin Bieber	</option>
                                     <option value="WarrenBuffett">Warren Buffett</option>
@@ -242,7 +243,7 @@
 
             // var {keywords, hashtags, cashtags} = splitTags($( "#tag" ).val());
             $.ajax({
-                url : '{{route('update')}}',
+                url : '{{route('resend')}}',
                 type : 'get',
                 data : {
                         'accountsFrom' : accountsFrom,
